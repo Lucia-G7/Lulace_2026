@@ -1,0 +1,98 @@
+:root {
+  --fondo: #d3cac8;
+  --texto: #5b6844;
+  --acento: #5f6f45;
+  --linea: #93a77c;
+  --marca: #ffffff;
+  --fondo-foto: #ecd3dc;
+  --letra: "Montserrat", system-ui, sans-serif;
+  --letra-marca: "Great Vibes";  
+}
+
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--letra);
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+/* La portada: el nombre de la marca, con una rama en cada esquina */
+.encabezado {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem 1.5rem;
+  text-align:center;
+
+}
+
+.logo {
+  width:150px;
+  height: auto;
+  border-radius:50%;
+  
+}
+
+
+.titulo-catalogo{
+    grid-column: 1 / 3;
+    text-align: center;
+   
+}
+
+.catalogo {
+  
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+
+.producto img{
+  width:150px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+
+
+.producto h2 {
+  width:100%;
+  margin: 0.75rem 0 0;
+  padding-top: 1rem;
+  border-top: 3px solid var(--linea);
+  font-size: 1.5rem;
+  font-weight: 600;
+  
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+
+.contacto {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--fondo-foto);
+}
+
+.contacto a{
+    display:inline-block;
+    padding:12px 24px;
+    background-color: #93d325;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.contacto a:hover{
+    transition: all 0.3s ease;
+    background-color: #5f6f45;
+}
